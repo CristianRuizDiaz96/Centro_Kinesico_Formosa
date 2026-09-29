@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Kinésico Formosa — Kinesiología y fisioterapia</title>
+  <meta name="description" content="Centro Kinésico Formosa: kinesiología, fisioterapia y rehabilitación integral. Horarios, ubicación y contacto directo por WhatsApp.">
+
+  <!-- Versión de prueba: que Google no la muestre en búsquedas. Borrar esta línea si la aprueban. -->
+  <meta name="robots" content="noindex">
+
+  <!-- Vista previa al compartir el link por WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Centro Kinésico Formosa">
+  <meta property="og:description" content="Kinesiología, fisioterapia y rehabilitación integral en Formosa.">
+  <meta property="og:url" content="https://cristianruizdiaz96.github.io/Centro_Kinesico_Formosa/">
+  <meta property="og:image" content="https://cristianruizdiaz96.github.io/Centro_Kinesico_Formosa/img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="img/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="theme-color" content="#1E2A30">
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="img/logo.png"
+         alt="Logo del Centro Kinésico Formosa"
+         width="512" height="512" fetchpriority="high">
+    <h1>Centro Kinésico Formosa</h1>
+    <p class="bajada">Kinesiología y fisioterapia</p>
+    <p class="lema">Rehabilitación integral</p>
+  </header>
+
+  <main>
+
+    <section id="estado">
+      <p id="estado-texto">Consultando horario…</p>
+      <p id="estado-detalle"></p>
+      <p id="estado-aviso" hidden>Dejanos tu mensaje y te respondemos apenas abrimos.</p>
+      <a class="boton-principal" href="https://wa.me/5493704649584?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20turnos%20y%20tratamientos.">
+        <svg class="icono" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M12 3.2c-4.9 0-8.8 3.6-8.8 8 0 2 .8 3.9 2.2 5.3L4.2 20a.5.5 0 0 0 .6.7l3.8-1.3c1.1.4 2.2.6 3.4.6 4.9 0 8.8-3.6 8.8-8s-3.9-8.8-8.8-8.8z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <a class="boton-secundario" href="tel:+5493704649584">Llamar</a>
+    </section>
+
+    <!-- CONFIRMAR con el dueño qué servicios quiere mostrar y cómo describirlos -->
+    <section id="servicios">
+      <h2>Qué hacemos</h2>
+      <ul>
+        <li>
+          <h3>Kinesiología</h3>
+          <p>Evaluación y tratamiento kinésico a cargo de profesionales matriculados.</p>
+        </li>
+        <li>
+          <h3>Fisioterapia</h3>
+          <p>Tratamientos con agentes físicos, según la indicación de cada caso.</p>
+        </li>
+        <li>
+          <h3>Rehabilitación integral</h3>
+          <p>Te acompañamos durante todo el proceso de recuperación.</p>
+        </li>
+        <li>
+          <h3>Turnos por WhatsApp</h3>
+          <p>Escribinos y coordinamos el día y el horario que mejor te quede.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONFIRMAR nombres, títulos y matrículas antes de publicar -->
+    <section id="equipo">
+      <h2>Quiénes te atienden</h2>
+      <ul>
+        <li>Marcelo Javier Markes</li>
+        <li>Mariela Jugo</li>
+      </ul>
+    </section>
+
+    <!-- CONFIRMAR la lista completa de obras sociales -->
+    <section id="obras-sociales">
+      <h2>Obras sociales</h2>
+      <ul>
+        <li>PAMI</li>
+        <li>IASEP</li>
+      </ul>
+      <p>¿No ves la tuya? Escribinos por WhatsApp y te confirmamos.</p>
+    </section>
+
+    <!-- Si cambian los horarios, cambiarlos también en js/script.js -->
+    <section id="horarios">
+      <h2>Horarios</h2>
+      <dl>
+        <dt>Lunes a viernes</dt>
+        <dd>
+          <time datetime="07:30">7:30</time> a <time datetime="12:00">12:00</time>
+          y <time datetime="14:30">14:30</time> a <time datetime="19:00">19:00</time>
+        </dd>
+        <dt>Sábados y domingos</dt>
+        <dd>Cerrado</dd>
+      </dl>
+    </section>
+
+    <section id="ubicacion">
+      <h2>Dónde estamos</h2>
+      <address>
+        Mitre 218<br>
+        Formosa, Formosa
+      </address>
+      <!-- Ubicación del local por coordenadas (latitud, longitud) -->
+      <iframe
+        src="https://www.google.com/maps?q=-26.178082,-58.1731089&output=embed"
+        title="Mapa: Centro Kinésico Formosa"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+      </iframe>
+      <a class="como-llegar"
+         href="https://www.google.com/maps/dir/?api=1&destination=-26.178082,-58.1731089"
+         target="_blank" rel="noopener">Cómo llegar</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Centro Kinésico Formosa</p>
+    <p>Versión de prueba.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

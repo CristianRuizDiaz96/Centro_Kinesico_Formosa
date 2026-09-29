@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colores tomados del logo, oscurecidos lo justo
+     para que el texto se lea bien encima */
+  --cyan: #00ABE3;
+  --cyan-oscuro: #00789F;
+  --cyan-suave: #EAF7FC;
+  --magenta: #FE1C99;
+  --magenta-oscuro: #BE1573;
+  --magenta-suave: #FDF2F8;
+  --oscuro: #1E2A30;
+  --verde-whatsapp: #188741;
+  --texto: #1F2B33;
+  --texto-suave: #5C6B73;
+  --borde: #D6E4EA;
+  --blanco: #FFFFFF;
+  --gris-suave: #F5F7F8;
+}
+
+body {
+  font-family: "Archivo", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--texto);
+  background-color: var(--blanco);
+  line-height: 1.6;
+}
+
+header,
+main section,
+footer {
+  padding: 32px 20px;
+}
+
+/* ---------- Encabezado ---------- */
+
+header {
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-align: center;
+}
+
+header .logo {
+  display: block;
+  width: 96px;
+  height: auto;
+  margin: 0 auto 16px;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+/* Línea cyan debajo del nombre, como en el cartel del local */
+header .bajada {
+  position: relative;
+  margin-top: 16px;
+  padding-top: 16px;
+  color: var(--cyan);
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+header .bajada::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  margin-left: -90px;
+  background-color: var(--cyan);
+}
+
+header .lema {
+  margin-top: 4px;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* ---------- Estado abierto / cerrado ---------- */
+
+#estado {
+  text-align: center;
+}
+
+#estado-texto {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#estado-texto.abierto {
+  color: var(--cyan-oscuro);
+}
+
+#estado-texto.cerrado {
+  color: var(--texto-suave);
+}
+
+#estado-detalle {
+  color: var(--texto-suave);
+  margin-bottom: 24px;
+}
+
+#estado-aviso {
+  max-width: 420px;
+  margin: -8px auto 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  background-color: var(--cyan-suave);
+  color: var(--cyan-oscuro);
+  font-size: 15px;
+}
+
+.boton-principal,
+.boton-secundario,
+.como-llegar {
+  display: block;
+  max-width: 420px;
+  margin: 0 auto 12px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.boton-principal {
+  background-color: var(--verde-whatsapp);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.boton-principal .icono {
+  flex: none;
+}
+
+.boton-secundario {
+  border: 2px solid var(--magenta-oscuro);
+  color: var(--magenta-oscuro);
+}
+
+/* ---------- Servicios ---------- */
+
+#servicios {
+  background-color: var(--cyan-suave);
+}
+
+#servicios ul {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+#servicios li {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--blanco);
+}
+
+#servicios h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--cyan-oscuro);
+}
+
+#servicios p {
+  color: var(--texto-suave);
+  margin-top: 4px;
+}
+
+/* ---------- Equipo ---------- */
+
+#equipo ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+#equipo li {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background-color: var(--magenta-suave);
+  color: var(--magenta-oscuro);
+  font-weight: 500;
+}
+
+/* ---------- Obras sociales ---------- */
+
+#obras-sociales {
+  background-color: var(--gris-suave);
+}
+
+#obras-sociales ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+#obras-sociales li {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background-color: var(--cyan-suave);
+  color: var(--cyan-oscuro);
+  font-weight: 500;
+}
+
+#obras-sociales p {
+  margin-top: 12px;
+  color: var(--texto-suave);
+}
+
+/* ---------- Horarios ---------- */
+
+#horarios dl {
+  margin-top: 16px;
+}
+
+#horarios dt {
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+#horarios dd {
+  color: var(--texto-suave);
+}
+
+/* ---------- Ubicación ---------- */
+
+#ubicacion {
+  background-color: var(--gris-suave);
+}
+
+#ubicacion address {
+  font-style: normal;
+  margin-top: 12px;
+}
+
+#ubicacion iframe {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: 320px;
+  border: 0;
+  border-radius: 8px;
+  margin: 20px auto 16px;
+}
+
+.como-llegar {
+  border: 2px solid var(--cyan-oscuro);
+  background-color: var(--blanco);
+  color: var(--cyan-oscuro);
+}
+
+/* ---------- Títulos y pie ---------- */
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+footer {
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-align: center;
+}
+
+footer p:last-child {
+  color: #A9BCC4;
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+/* ---------- Pantallas grandes ---------- */
+
+@media (min-width: 768px) {
+  header,
+  main section,
+  footer {
+    padding: 48px 24px;
+  }
+
+  header .logo {
+    width: 120px;
+  }
+
+  header h1 {
+    font-size: 46px;
+  }
+
+  h2,
+  #servicios ul,
+  #equipo ul,
+  #obras-sociales ul,
+  #obras-sociales p,
+  #horarios dl,
+  #ubicacion address {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #servicios ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #equipo ul,
+  #obras-sociales ul,
+  #obras-sociales p,
+  #ubicacion address {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #horarios dl {
+    text-align: center;
+  }
+}
